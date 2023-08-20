@@ -32,7 +32,7 @@ function App() {
 export default App;
 ```
 
-### Contents
+### Contents.jsx
 
 ```js
 import Character from "../components/Character";
@@ -75,7 +75,7 @@ function Contents() {
 export default Contents;
 ```
 
-### Character
+### Character.jsx
 
 ```js
 import ViewMore from "./ViewMore";
