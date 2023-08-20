@@ -6,7 +6,7 @@
 
 ### 파일 구조
 
-![Alt text](image.png)
+![Alt text](image-1.png)
 
 ## 주요 코드
 
