@@ -1,11 +1,16 @@
+import { Link } from "react-router-dom";
 import NavButton from "./NavButton";
 
 function Nav() {
   return (
-    <div className=" mx-auto flex justify-center gap-2 pb-2">
-      <NavButton text="Main" />
-      <NavButton text="Contact Us" />
-    </div>
+    <nav className=" mx-auto flex justify-center gap-2 pb-2">
+      <Link to="/Home">
+        <NavButton text="Home" />
+      </Link>
+      <Link to="/Contact">
+        <NavButton text="Contact" />
+      </Link>
+    </nav>
   );
 }
 

@@ -1,14 +1,22 @@
-import Contents from "./pages/Contents";
-import Footer from "./pages/Footer";
+import Contact from "./pages/Contact";
 import Home from "./pages/Home";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <Home />
-      <Contents />
-      <Footer />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
+
+    // <>
+    //   <Home />
+
+    //   <Contact />
+    // </>
   );
 }
 
