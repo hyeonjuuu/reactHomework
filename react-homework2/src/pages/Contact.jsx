@@ -2,6 +2,7 @@ import Nav from "../components/Nav";
 import Logo from "../assets/Logo.svg";
 import MainImage from "../assets/main_image.webp";
 import Footer from "./Footer";
+import ContactInput from "../components/ContactInput";
 
 function Contact() {
   return (
@@ -11,21 +12,10 @@ function Contact() {
       <img src={MainImage} alt="메인 이미지" className=" mx-auto mb-2" />
       <div className="w-[1000px] mx-auto h-[650px] border-[1px] border-neutral-400 rounded-md flex flex-col items-center justify-center bg-yellow-400 gap-1">
         <h1 className="text-[36px] font-bold text-[#5E471A] mb-2">Contact</h1>
-        <input
-          type="text"
-          placeholder="Name"
-          className=" w-[300px] px-4 py-4 box-content   focus:outline-[#F3901B] focus:border-[1px]"
-        />
-        <input
-          type="text"
-          placeholder="E-mail"
-          className=" w-[300px] px-4 py-4 box-content   focus:outline-[#F3901B] focus:border-[1px]"
-        />
-        <input
-          type="text"
-          placeholder="Phone"
-          className=" w-[300px] px-4 py-4 box-content   focus:outline-[#F3901B] focus:border-[1px]"
-        />
+        <ContactInput placeholder="Name" />
+        <ContactInput placeholder="E-mail" />
+        <ContactInput placeholder="Phone" />
+
         <div className="flex flex-col">
           <textarea
             name="message"
